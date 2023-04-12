@@ -86,3 +86,4 @@ python main.py
 
 * Upload as webapp
 * Auto generate subreddits
+* Decrypt comments as they are read instead of storing all comments.
