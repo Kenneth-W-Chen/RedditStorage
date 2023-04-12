@@ -1,17 +1,15 @@
 # RedditStorage
 ###### Cloud storage that uses Reddit as a backend. 
 
-=============
+RedditStorage is an application that allows you to store on reddit subreddits via raw bytes. The file is encoded into characters and encrypted using AES-GCM encryption, after which it can be stored on a subreddit of choice (ideally your own private subreddit). To retrieve the file, the process is simply reversed. Unfortunately, reddit comments have a character limit of 10000. If your file exceeds that amount, it will be split up among comments in the same thread which form links by replying to each other. 
 
-RedditStorage is an application that allows you to store on reddit subreddits via raw bytes. The file is encoded into characters and encrypted using AES encryption, after which it can be stored on a subreddit of choice (ideally your own private subreddit). To retrieve the file, the process is simply reversed. Unfortunately, reddit comments have a character limit of 10000. If your file exceeds that amount, it will be split up among comments in the same thread which form links by replying to each other. 
-
-=============
+---
 
 ## Requirements:
 * A Reddit account (preferably with over 1 link karma on it)
 * A private subreddit with your reddit account as a moderator (make sure to set the spam filter strength of self posts and comments to "low")
 * praw 7.7.0
-* Python 3.5+ (and Pip3)
+* Python 3.5+
 * pycryptodome 3.17
 * wxPython 3.0
 * Pypubsub 4.3.0
@@ -42,8 +40,7 @@ sudo apt-get install python3 python3-pip
 pip install praw pycryptodome wxpython pypubsub
 ```
 
-
-=============
+---
 
 ## Usage:
 
@@ -71,9 +68,6 @@ python main.py
 
 ### Screenshots
 
-
-===========
-
 ![ss1](screenshot1.png "Post")
 ![ss2](screenshot2.png "Get")
 ![ss3](screenshot3.png "See which files are uploaded")
@@ -81,8 +75,6 @@ python main.py
 ![ss5](screenshot5.png "Big file made up of linked comments")
 
 ## To Do
-
-==============
 
 * Upload as webapp
 * Auto generate subreddits
